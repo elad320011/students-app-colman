@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="24dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,54 +9,64 @@
         android:id="@+id/nameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Student Name" />
+        android:hint="Student Name"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/idEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Student ID"
-        android:layout_marginTop="8dp" />
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
 
     <EditText
         android:id="@+id/phoneEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Phone"/>
+        android:hint="Phone"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
 
     <EditText
         android:id="@+id/addressEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Address"/>
+        android:hint="Address"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
 
     <CheckBox
         android:id="@+id/checkedCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Checked"
-        android:layout_marginTop="16dp" />
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Save" />
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/deleteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:text="Delete"
-        android:textColor="#FF0000" />
+        android:textColor="#FF0000"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Back" />
+        android:layout_marginTop="20dp"
+        android:text="Back"
+        android:textSize="18sp" />
 
 </LinearLayout>
