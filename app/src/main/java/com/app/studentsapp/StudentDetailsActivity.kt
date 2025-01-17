@@ -24,8 +24,12 @@ class StudentDetailsActivity : AppCompatActivity() {
                 val intent = Intent(this, EditStudentActivity::class.java)
                 intent.putExtra("STUDENT_ID", student.id)
                 startActivity(intent)
+                finish() // Close the current activity to refresh on return
             }
 
+            findViewById<Button>(R.id.backButton).setOnClickListener {
+                finish()
+            }
         }
     }
 }
