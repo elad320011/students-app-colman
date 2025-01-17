@@ -2,6 +2,7 @@ package com.app.studentsapp
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
@@ -19,18 +20,21 @@ class EditStudentActivity : AppCompatActivity() {
         val idEditText = findViewById<EditText>(R.id.idEditText)
         val phoneEditText = findViewById<EditText>(R.id.phoneEditText)
         val addressEditText = findViewById<EditText>(R.id.addressEditText)
+        val checkedCheckBox = findViewById<CheckBox>(R.id.checkedCheckBox)
 
         // Populate fields
         nameEditText.setText(student.name)
         idEditText.setText(student.id)
         phoneEditText.setText(student.phone)
         addressEditText.setText(student.address)
+        checkedCheckBox.isChecked = student.isChecked
 
         findViewById<Button>(R.id.saveButton).setOnClickListener {
             student.name = nameEditText.text.toString()
             student.id = idEditText.text.toString()
             student.phone = phoneEditText.text.toString()
             student.address = addressEditText.text.toString()
+            student.isChecked = checkedCheckBox.isChecked
             finish()
         }
 

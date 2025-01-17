@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.CheckBox
 import androidx.appcompat.app.AppCompatActivity
 
 class StudentDetailsActivity : AppCompatActivity() {
@@ -19,6 +20,7 @@ class StudentDetailsActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.idTextView).text = student.id
             findViewById<TextView>(R.id.phoneTextView).text = student.phone
             findViewById<TextView>(R.id.addressTextView).text = student.address
+            findViewById<CheckBox>(R.id.checkedCheckBox).isChecked = student.isChecked
 
             findViewById<Button>(R.id.editButton).setOnClickListener {
                 val intent = Intent(this, EditStudentActivity::class.java)
