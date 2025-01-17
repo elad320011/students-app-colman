@@ -26,5 +26,9 @@ class NewStudentActivity : AppCompatActivity() {
                 finish() // Go back to the previous screen
             }
         }
+
+        findViewById<Button>(R.id.cancelButton).setOnClickListener {
+            finish() // Go back to the previous screen without saving
+        }
     }
 }
